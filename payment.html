@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GPL Payment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo">GPL</div>
+    <div class="site-name">Gentlemen Premiere League</div>
+  </div>
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- PAYMENT SECTION -->
+<section class="section">
+  <div class="card">
+
+    <h2 style="text-align:center;">Registration Payment</h2>
+    <p style="text-align:center; color:#475569;">
+      Complete payment to confirm your GPL trial registration
+    </p>
+
+    <div style="text-align:center; margin:20px 0;">
+      <h3>Amount: ₹299</h3>
+    </div>
+
+    <!-- UPI PAYMENT -->
+    <a href="upi://pay?pa=Gaurav747@ptaxis&pn=GPL%20League&am=299&cu=INR">
+      <button style="width:100%;">Pay Now via UPI</button>
+    </a>
+
+    <p style="text-align:center; margin:18px 0; font-size:14px;">
+      Payment hone ke baad WhatsApp par details bhejein
+    </p>
+
+    <!-- WHATSAPP CONFIRMATION -->
+    <a href="https://wa.me/917982581951?text=Hello%20GPL%20Team,%0AI%20have%20completed%20the%20registration%20payment.%0A%0AName:%0APhone:%0ATransaction%20ID:%0A">
+      <button class="whatsapp-btn" style="width:100%;">
+        Send Payment Details on WhatsApp
+      </button>
+    </a>
+
+    <p style="margin-top:20px; font-size:13px; color:#64748b; text-align:center;">
+      ⚠️ Registration will be confirmed after payment verification
+    </p>
+
+  </div>
+</section>
+
+</body>
+</html>
+<p style="margin-top:15px; font-size:14px;">
+UPI not opening? Pay manually on:<br>
+<strong>Gaurav747@ptaxis</strong>
+</p>
+<a href="intent://pay?pa=Gaurav747@ptaxis&pn=GPL%20League&am=299&cu=INR#Intent;scheme=upi;end">
+  <button style="width:100%;">Pay Now via UPI</button>
+</a>
+<form action="success.html">
+  <label>Transaction ID (Required)</label>
+  <input type="text" placeholder="Enter UPI Transaction ID" required>
+
+  <button type="submit">Confirm Payment</button>
+</form>
